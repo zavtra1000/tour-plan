@@ -494,7 +494,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -503,6 +502,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -542,6 +544,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 280px;
+  }
   .logo {
     width: 99px;
   }
