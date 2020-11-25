@@ -1,20 +1,43 @@
-var mySwiper = new Swiper('.swiper-container', {
+var hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
   
 })
 
-var mySwiper = new Swiper('.swiper-container', {
+var hotelSwiper = new Swiper('.hotel-slider', {
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
 });
+
+var reviewsSlider = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
+  },
+  
+})
+
+var reviewsSlider = new Swiper('.reviews-slider', {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+
+
+
+  
 
   
