@@ -36,7 +36,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   },
 });
 
-
+$('.newletter').parallax({imageSrc: '../img/newletter.jpg'});
 
   
 
