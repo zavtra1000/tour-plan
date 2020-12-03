@@ -21,7 +21,7 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.php" class="logo">
             <img
               src="img/logo.svg"
               alt="logo: Best tour plan"
