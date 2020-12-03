@@ -19,6 +19,7 @@ $body = "
 <b>Сообщение:</b><br>$message
 ";
 
+
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -69,3 +70,4 @@ else {$result = "error";}
 // Отображение результата
 header('Location: thankyou.html' );
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+

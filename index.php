@@ -133,11 +133,12 @@
           subscribe to our
           <span class="newletter-title_strong">Newsletter</span>
         </h2>
-        <form action="#" class="subsribe newletter__subsribe">
+        <form action="send.php" method="POST" class="subsribe newletter__subsribe">
           <input
             type="text"
             class="subsribe__input"
             placeholder="Your email address"
+            name="message"
           />
           <button class="subsribe__button">Send</button>
         </form>
