@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var hotelSwiper = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
@@ -36,9 +37,36 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 
 $(".newletter").parallax({ imageSrc: "../img/newletter.jpg" });
 
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function () {
-  document
-    .querySelector(".navbar-botton")
-    .classList.toggle("navbar-botton--visible");
+var menuButton = $(".menu-button");
+menuButton.on("click", function () {
+  $(".navbar-botton").toggleClass("navbar-botton--visible");
+});
+
+
+
+var modalButton = $('[data-toggle=modal]');
+var closeModalButton = $(".modal__close");
+modalButton.on('click', openModal);
+closeModalButton.on('click', closeModal);
+
+function openModal () {
+  const targetModal = $(this).attr('data-href');
+  $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
+  $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
+
+}
+
+function closeModal (event) {
+  event.preventDefault(); 
+  const modalOverlay = $('.modal__overlay');
+  const modalDialog = $('.modal__dialog');
+  modalOverlay.removeClass('modal__overlay--visible');
+  modalDialog.removeClass('modal__dialog--visible');
+
+
+
+}
+
+
+
 });
