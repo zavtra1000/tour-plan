@@ -10,16 +10,16 @@
                 height: 100%
                 object-fit: cover
     .card
-        width: 250px
-        height: 250px
+        width: 230px
+        height: 230px
     .footer
         &__input
             &-group
                 flex-basis: 100%
 
 @media (max-width: 992px)
-    .container .newletter-wrapper
-        max-width: 700px
+    .container, .newletter-wrapper
+        width: 700px
     .logo
         width: 132px
     .navbar
@@ -34,12 +34,16 @@
         &-menu__link
             font-size: 12px
             line-height: 15px
+    .slider
+        width: 100%
+        margin-bottom: 30px
     .search
         &__input
             width: 340px
     .hotel
         &-grid
             flex-direction: column
+
         &__slider
             margin-bottom: 30px
         &-right
@@ -57,12 +61,11 @@
     .activities
         &-wrapper
             flex-wrap: wrap
-        &__card
-            margin-bottom: 20px
     .card
         // width: 45%
         width: 340px
         height: 250px
+        margin-bottom: 20px
     .footer
         &-wrapper
             grid-template-columns: repeat(6, 1fr)
@@ -202,6 +205,10 @@
                     right: 50%
                     margin-right: -65px
                     transform: translate(50%, 0)
+            &__title
+                font-weight: bold
+                font-size: 30px
+                line-height: 38px
     .activities
         padding-top: 40px
         padding-bottom: 60px
@@ -227,6 +234,11 @@
         padding: 76px 0 83px 0
         &__title
             margin-bottom: 37px
+    .reviews
+        &__title
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
     .subsribe
         width: 100%
     .card

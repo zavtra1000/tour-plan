@@ -1,11 +1,10 @@
 .newletter
     position: relative
     padding: 98px 0 87px 0
-    background-image: url(../img/newletter.jpg)
+    // background-image: url(../img/newletter.jpg)
     background-repeat: no-repeat
     background-position: center
     background-size: cover
-    background: transparent
     &:before
         content: ''
         position: absolute
@@ -23,7 +22,7 @@
         justify-content: space-between
         max-width: 731px
         margin: auto
-    &-title
+    &__title
         display: flex
         flex-direction: column
         color: $light
@@ -31,10 +30,13 @@
         font-weight: 300
         font-size: 24px
         line-height: 30px
-    &__strong
-        font-size: 36px
-        line-height: 45px
-        text-transform: uppercase
+        margin: 0
+        &--strong
+            font-style: normal
+            font-weight: 600
+            font-size: 36px
+            line-height: 45px
+            text-transform: uppercase
 .subsribe
     position: relative
     width: 355px
@@ -59,5 +61,9 @@
         top: 0
         height: 100%
         border: none
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
         background-color: $primary
         color: $light

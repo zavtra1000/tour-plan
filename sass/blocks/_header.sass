@@ -4,14 +4,15 @@
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 40px
-    &__menu-button
-        display: none
+        padding: 40px 0 40px 0
+        &__menu-button
+            display: none
     &__search
         margin-right: auto
         margin-left: 108px
     &-botton
         background-color: $dark
+        border: none
     &-menu
         list-style-type: none
         margin: 0
@@ -19,17 +20,23 @@
         align-items: center
         justify-content: space-between
         color: $light
-        padding: 31px 0
-    &-menu__link
-        color: inherit
-        text-decoration: none
-        text-transform: uppercase
-        font-size: 14px
-        line-height: 18px
+        padding: 31px 0 31px 0
+        &__link
+            color: inherit
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 14px
+            line-height: 18px
+        &__item
+            &--mobile
+                &--visible
+                    display: none
     // &__user, &__search
     //     &--mobile
-    //         &_visible
+    //         &--hidden
     //             display: none
+    //         &--visible
+    //             display: flex
 .logo
     width: 177px
 
@@ -49,6 +56,7 @@
         font-size: 12px
         line-height: 15px
         color: $text-color
+        outline: none
     &__button
         position: absolute
         top: 0
@@ -57,7 +65,7 @@
         height: 100%
         border: none
         background-color: $primary
-
+        outline: none
 .user
     display: flex
     align-items: center

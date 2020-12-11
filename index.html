@@ -1,13 +1,13 @@
 <!-- ?php include('header.php')?> -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TOUR-PLAN</title>
+    <title>BEST TOUR-PLAN</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link 
+    <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -17,18 +17,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.php" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/logo.svg"
               alt="logo: Best tour plan"
-              class="logo__image" data-aos="fade-up"
+              class="logo__image"
+              data-aos="fade-up"
               data-aos-delay="100"
             />
           </a>
@@ -49,7 +50,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-up" data-aos-delay="300">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="avatar: natan"
@@ -141,7 +147,7 @@
           </li>
           <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
         </ul>
-      </div>
+      <!-- /container -->
     </nav>
     <!-- /.breadcrumb -->
     <section class="hotel">
@@ -165,7 +171,11 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
+          <div
+            data-toggle="modal"
+            data-href="#rating-modal"
+            class="rating hotel-info__rating"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
@@ -174,40 +184,42 @@
         <!-- hotel-info -->
         <div class="hotel-grid">
           <!-- Slider main container -->
-          <div class="swiper-container hotel-slider hotel__slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide hotel-slider__item">
-                <img
-                  class="hotel-slider__image"
-                  src="img/slide.jpg"
-                  alt="slide"
-                />
+          <div class="slider">
+            <div class="swiper-container hotel-slider hotel__slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide hotel-slider__item">
+                  <img
+                    class="hotel-slider__image"
+                    src="img/slide.jpg"
+                    alt="slide"
+                  />
+                </div>
+                <div class="swiper-slide hotel-slider__item">
+                  <img
+                    class="hotel-slider__image"
+                    src="img/slide.jpg"
+                    alt="slide"
+                  />
+                </div>
+                <div class="swiper-slide hotel-slider__item">
+                  <img
+                    class="hotel-slider__image"
+                    src="img/slide.jpg"
+                    alt="slide"
+                  />
+                </div>
               </div>
-              <div class="swiper-slide hotel-slider__item">
-                <img
-                  class="hotel-slider__image"
-                  src="img/slide.jpg"
-                  alt="slide"
-                />
-              </div>
-              <div class="swiper-slide hotel-slider__item">
-                <img
-                  class="hotel-slider__image"
-                  src="img/slide.jpg"
-                  alt="slide"
-                />
-              </div>
-            </div>
 
-            <!-- If we need navigation buttons -->
-            <button
-              class="hotel-slider__button hotel-slider__button--prev"
-            ></button>
-            <button
-              class="hotel-slider__button hotel-slider__button--next"
-            ></button>
+              <!-- If we need navigation buttons -->
+              <button
+                class="hotel-slider__button hotel-slider__button--prev"
+              ></button>
+              <button
+                class="hotel-slider__button hotel-slider__button--next"
+              ></button>
+            </div>
           </div>
           <!-- /swiper-container -->
 
@@ -248,7 +260,13 @@
                 <span class="booking__num">12100</span>
               </div>
               <!-- /.booking__call-center -->
-              <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="button booking__button"
+              >
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -266,15 +284,15 @@
           </div>
         </div>
         <!-- /.hotel-grid -->
-      </div>
-      <!-- /.container -->
+        </div>
+      </div><!-- /.container -->
     </section>
 
     <section class="newletter">
       <div class="newletter-wrapper">
-        <h2 class="newletter-title newletter__title">
+        <h2 class="newletter__title">
           subscribe to our
-          <span class="newletter-title_strong">Newsletter</span>
+          <span class="newletter__title--strong">Newsletter</span>
         </h2>
         <form
           action="send.php"
@@ -296,11 +314,15 @@
 
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
+        <h2 class="reviews__title">What people think about &nbsp;us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="reviews-slider__item" data-aos="fade-up" data-aos-duration="3000">
+              <div
+                class="reviews-slider__item"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div class="reviews-slider__profile">
                   <img
                     src="img/avatar.jpg"
@@ -338,11 +360,11 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/avatar.jpg"
-                    alt="photo: Megan Fox"
+                    src="img/avatar-2.jpg"
+                    alt="photo: Stacy"
                     class="reviews-slider__avatar"
                   />
-                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <h3 class="reviews-slider__username">Stacy</h3>
                   <span class="reviews-slider__date">Stayed 20 Dec, 2019</span>
                   <div class="reviews-slider__rating">
                     <img src="img/Star.svg" alt="star" />
@@ -355,15 +377,15 @@
                 </div>
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                  It was very nice hotel with cleanliness. Staff behavior was
-                  good and polite. They welcome us very well. Issue was only
-                  that Lift was not in working and we were allotted to 3rd floor
-                  and amenities articles were in corner of gallery which were
-                  giving bad feeling. Breakfast was good and support of the
-                  staff was also very nice. Location is not good as per
-                  atmosphere, it is very nearby most of the popular places but
-                  self location in a narrow street is not good. Overall it was a
-                  good experience and could recommend.
+                  This resort is sprawling and guests will need to plan on
+                  walking a bit to get around; it can take 10 minutes to get
+                  from one end to the other. In the heart of the resort is the
+                  massive, freeform infinity pool, outdoor whirlpools,
+                  waterslide and kids' pool, as well as pretty tropical
+                  landscaping. Even though in some ways the resort feels like
+                  the chain resort that it is, there are locally influenced
+                  touches, such as "palapas" and wood-slatted coverings over
+                  some of the loungers.
                 </p>
               </div>
               <!-- /.reviews-slider__item -->
@@ -388,44 +410,68 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities" data-aos="fade-up"  data-aos-delay="100">
+          <div class="card activities" data-aos="fade-up" data-aos-delay="100">
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
               class="card__image"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#book-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
-          <div class="card activities" data-aos="fade-up"  data-aos-delay="300">
+          <div class="card activities" data-aos="fade-up" data-aos-delay="300">
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#book-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
-          <div class="card activities" data-aos="fade-up"  data-aos-delay="500">
+          <div class="card activities" data-aos="fade-up" data-aos-delay="500">
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day "
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#book-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
-          <div class="card activities" data-aos="fade-up"  data-aos-delay="700">
+          <div class="card activities" data-aos="fade-up" data-aos-delay="700">
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#book-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
         </div>
@@ -438,11 +484,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: best tour-plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="footer__logo">
+            <img
+              src="img/vertical-logo.svg"
+              alt="Logo: best tour-plan"
+              class="logo footer__logo"
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -503,13 +551,22 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/facebook.svg" alt="icon: facebook"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/youtube.svg" alt="icon: youtube"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/instagram.svg" alt="icon: instagram"
               /></a>
             </div>
@@ -559,10 +616,18 @@
                     alt="icon: phone-call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 Tel (hotline) Monday - Saturday:
+                Tel (business hours) :
+                <a href="tel:2691500" class="footer__item--tel">269 1500</a>
                 <br />
-                52-56-61-38 (08:00 am – 20:00 pm) Tel (hotline) Sunday: <br />
-                52-56-61-38 (08:00 am – 14:00 pm)
+                Tel (hotline) Monday - Saturday:
+                <a href="tel:52566138" class="footer__item--tel">52-56-61-38</a>
+                (08:00 am – 20:00 pm)
+                <br />
+                Tel (hotline) Sunday:
+                <a href="tel:52566138" class="footer__item--tel"
+                  >52-56-61-38
+                </a>
+                (08:00 am – 14:00 pm)
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -572,31 +637,39 @@
                     alt="icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a
+                  href="mailto:cherly.lawson@example.com"
+                  class="footer__item--tel"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="send.php" method="POST" class="uniform footer__form form">
+            <form
+              action="send.php"
+              method="POST"
+              class="uniform footer__form form"
+            >
               <div class="footer__input-group">
                 <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-                required
-              />
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
               </div>
               <div class="footer__input-group">
                 <input
-                type="tel"
-                class="input footer__input phone"
-                placeholder="Phone Number*"
-                name="phone"
-                required
-              />
+                  type="tel"
+                  class="input footer__input phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
               </div>
               <textarea
                 class="message footer__message"
@@ -660,7 +733,7 @@
     </div>
     <!-- /.modal -->
 
-        <div class="modal" id="rating-modal">
+    <div class="modal" id="rating-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -668,6 +741,42 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title">Send us a feedback</h3>
+        <form action="send.php" method="POST" class="uniform modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input phone"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="book-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title">Book Now</h3>
         <form action="send.php" method="POST" class="uniform modal__form form">
           <input
             type="text"

@@ -53,6 +53,7 @@ function openModal () {
   const targetModal = $(this).attr('data-href');
   $(targetModal).find('.modal__overlay').addClass('modal__overlay--visible');
   $(targetModal).find('.modal__dialog').addClass('modal__dialog--visible');
+  
 
 }
 
@@ -81,15 +82,15 @@ $(".form").each(function () {
     errorClass: "invaild",
     messages: {
       name: {
-        required: "Укажите имя",
-        minlength: "Имя должно содержать не менее 2 симоволов или букв  ",
+        required: "Enter your name",
+        minlength: "The name must contain at least 2 symbols or letters  ",
       },
       email: {
         required: "We need your email address to contact you",
         email: "Your email address must be in the format of name@domain.com",
       },
       phone: {
-        required: "Телефон обязателен",
+        required: "Phone is required",
       },
     },
   });

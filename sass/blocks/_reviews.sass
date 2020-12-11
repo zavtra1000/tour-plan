@@ -7,7 +7,8 @@
         line-height: 45px
         text-align: center
         text-transform: uppercase
-        margin-bottom: 70px
+        margin: 0 0 70px 0
+        
     &-slider
         &__item
             position: relative
@@ -47,14 +48,16 @@
             background-size: 10px
             background-position: center
             border: none
+            outline: none
             background-color: transparent
             cursor: pointer
             z-index: 99
+            margin: -14px 0 0 0 
             &--prev
-                left: 0
+                left: 24px
                 background-image: url(../img/arrow-prev-secondary.svg)
             &--next
-                right: 0
+                right: 28px
                 background-image: url(../img/arrow-next-secondary.svg)
 
         &__profile
@@ -75,7 +78,7 @@
             font-size: 12px
             line-height: 15px
             color: $primary
-            margin-bottom: 10px
+            margin: 0 0 10px 0
         &__date
             font-style: normal
             font-weight: normal
