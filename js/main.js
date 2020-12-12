@@ -35,12 +35,12 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
-$(".newletter").parallax({ imageSrc: "../img/newletter.jpg" });
+// $(".newletter").parallax({ imageSrc: "../img/newletter.jpg" });
 
-var menuButton = $(".menu-button");
-menuButton.on("click", function () {
-  $(".navbar-botton").toggleClass("navbar-botton--visible");
-});
+// var menuButton = $(".menu-button");
+// menuButton.on("click", function () {
+//   $(".navbar-botton").toggleClass("navbar-botton--visible");
+// });
 
 
 
