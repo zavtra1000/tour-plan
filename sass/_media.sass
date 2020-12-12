@@ -223,6 +223,7 @@
 @media (max-width: 576px)
     .container
         max-width: 280px
+
     .logo
         width: 99px
     .hotel
@@ -244,30 +245,58 @@
     .card
         // width: 45%
         width: 100%
+
     .footer
         &-wrapper
-            grid-template-columns: 1fr
-        &__logo
-            grid-row: 1
-            grid-column: 1
-        &__social
-            &-network
-                grid-row: 2
-                grid-column: 1
-        &__additional
-            grid-row: 3
-            grid-column: 1
-        &__categories
-            grid-row: 4
-            grid-column: 1
-        &__legal
-            grid-row: 5
-            grid-column: 1
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+        &-2blockdown
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            justify-content: space-between
+            max-width: 150px
+        &__item
+            &--mb-2
+                max-width: 250px
+        &__ul
+
         &__contact
-            &-details
-                grid-row: 6
-                grid-column: minmax (250px 200px)
-            &-form
-                grid-row: 7
-                grid-column: 1
-        &__info
+            width: 80%
+            margin-bottom: 20px
+        &-details
+            width: 80%
+            height: 240px
+
+            margin-bottom: 20px
+        &-form
+            width: 90%
+            height: 317px
+
+        // &-wrapper
+        //     grid-template-columns: 1fr
+        // &__logo
+        //     grid-row: 1
+        //     grid-column: 1
+        // &__social
+        //     &-network
+        //         grid-row: 2
+        //         grid-column: 1
+        // &__additional
+        //     grid-row: 3
+        //     grid-column: 1
+        // &__categories
+        //     grid-row: 4
+        //     grid-column: 1
+        // &__legal
+        //     grid-row: 5
+        //     grid-column: 1
+        // &__contact
+        //     &-details
+        //         grid-row: 6
+        //         grid-column: minmax (250px 200px)
+        //     &-form
+        //         grid-row: 7
+        //         grid-column: 1
+        // &__info
