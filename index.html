@@ -6,6 +6,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEST TOUR-PLAN</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
@@ -147,6 +149,7 @@
           </li>
           <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
         </ul>
+        </div>
       <!-- /container -->
     </nav>
     <!-- /.breadcrumb -->
@@ -255,9 +258,8 @@
               <!-- /.booking__info -->
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
-                <a class="booking__number" href="tel:12100"></a>
-                <img src="img/phone-call.svg" alt="icon: phone" />
-                <span class="booking__num">12100</span>
+                <img class="booking__image" src="img/phone-call.svg" alt="icon: phone" />
+                <a class="booking__num booking__number" href="tel:12100" >12100</a>
               </div>
               <!-- /.booking__call-center -->
               <button
@@ -284,7 +286,7 @@
           </div>
         </div>
         <!-- /.hotel-grid -->
-        </div>
+        
       </div><!-- /.container -->
     </section>
 
@@ -295,8 +297,8 @@
           <span class="newletter__title--strong">Newsletter</span>
         </h2>
         <form
-          action="send.php"
-          method="POST"
+          data-aos="fade-up"
+            data-aos-delay="200"
           class="subsribe newletter__subsribe"
         >
           <input
@@ -305,7 +307,8 @@
             placeholder="Your email address"
             name="message"
           />
-          <button class="subsribe__button">Send</button>
+          <button data-toggle="modal"
+            data-href="#newletter-modal" class="subsribe__button">Send</button>
         </form>
       </div>
       <!-- /.newletter-wrapper -->
@@ -314,7 +317,7 @@
 
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about &nbsp;us</h2>
+        <h2 class="reviews__title" id="text">What people think <br /> about us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -574,7 +577,7 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title footer__title--mb-3">LEGAL INFORMATION</h3>
+            <h3 class="footer__title footer__title--mb-4">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions</a>
@@ -617,8 +620,8 @@
                   />
                 </div>
                 <div class="footer-tel">
-                Tel (business hours) :
-                <a href="tel:2691500" class="footer__item--tel"></a>269 1500</a>
+                  Tel (business hours) :
+                <a href="tel:2691500" class="footer__item--tel">269 1500</a>
                 <br />
                 Tel (hotline) Monday - Saturday:
                 <a href="tel:52566138" class="footer__item--tel">52-56-61-38</a>
@@ -684,11 +687,22 @@
           </div>
           <!-- /.footer__contact-form -->
         </div>
-        <!-- /.footer-wrapper -->
+        <div class="brcrump">
+        <div class="brcrump__footer">
+            <a class="brcrump__text" href="#">Disclaimer</a>
+            <a class="brcrump__text" href="#">Conditions of use</a>
+            <a class="brcrump__text" href="#">Cancellation policy</a>
+            </div>
+            <div class="brcrump__pay">
+            <img src="img/pay.jpg" alt="icon: pay" class="footer__pay">
+            </div>
+          </div>
+        <!-- /.footer-ёpper -->
       </div>
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
 
     <div class="modal" id="booking-modal">
       <div class="modal__overlay"></div>
@@ -734,6 +748,41 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+<div class="modal" id="newletter-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title">subscribe to our NEWSLETTER</h3>
+        <form action="send.php" method="POST" class="uniform modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input phone"
+            placeholder="Phone Number"
+            name="phone"
+          />
+            <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+       </div>
+<!-- /modal newletter -->
 
     <div class="modal" id="rating-modal">
       <div class="modal__overlay"></div>
